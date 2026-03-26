@@ -1,0 +1,78 @@
+/* Skye's Abyss fanpage CSS file */
+
+body { font-family: "Goudy Old Style", arial, sans-serif;
+       font-size: 14px;
+       line-height: 1.5;
+       margin: 0;
+       padding: 0;
+       background: #e4eefa; }
+
+h1, h2, h3 { font-family: broadway, garamond, serif;
+             font-weight: normal;
+             margin-left: 10px; }
+
+div#wrapper { width: 728px;
+              margin: 10px auto;
+              background-color: #f8fbfe;
+              border: 2px solid #c8dcf5; }
+
+/* index page has a unique layout design */
+
+.index nav { text-align: center;
+             line-height: 1.5;
+             margin: 5px;
+             padding: 5px;
+             border-top: 1px solid #c8dcf5;
+             border-bottom: 1px solid #c8dcf5; }
+
+/* need to format the section instead of the article bc the nav is inside the article */
+.index section { margin: 10px; }
+
+.index header { height: 295px;
+                margin: 20px;
+                background: #f8fbfe url(images/s_toa_logo.png) center no-repeat; }
+/*image is official game logo, copyright bandai namco */
+
+.index h1 { text-align: center;
+            margin-left: 0px; }
+
+/* end of index-specific formatting */
+
+/* all content pages will have the same general layout */
+
+.content nav { float: left;
+               position: fixed;
+               width: 90px;
+               height: 1200px;
+               line-height: 1.5;
+               margin: 5px;
+               padding-left: 10px;
+               border-right: 1px solid #c8dcf5; }
+
+.content article { float: right;
+                   width: 600px;
+                   padding-right: 10px; }
+
+/* end of content page-specific formatting */
+
+/* using left/right sections in chara page to do fun things with image alignment */
+section#left { float: left;
+               width: 300px;
+               height: 300px;
+               margin-bottom: 5px; }
+
+section#right { float: right;
+                width: 300px;
+                height: 300px;
+                margin-bottom: 5px; }
+
+table, th, td { margin-left: 30px;
+                line-height: 1.2;
+                padding: 0px 5px; }
+
+footer { clear: both;
+         font-size: 80%;
+         line-height: 1.3;
+         text-align: center;
+         margin: 5px;
+         border-top: 1px solid #c8dcf5; }
