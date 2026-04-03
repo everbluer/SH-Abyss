@@ -1,78 +1,118 @@
 /* Skye's Abyss fanpage CSS file */
 
-body { font-family: "Goudy Old Style", arial, sans-serif;
+@font-face {font-family: 'LT Museum';
+            src :url(LTMuseum-Bold.ttf);
+            font-weight: bold;
+            font-style: normal;}
+
+/* Font by LyonsType licensed under SIL Open Font License, from https://lyonstype.neocities.org/fonts */
+
+body { font-family: Tahoma, arial, sans-serif;
        font-size: 14px;
        line-height: 1.5;
        margin: 0;
        padding: 0;
-       background: #e4eefa; }
+       background: #e3f6b5 url(images/gingham_200.png); }
 
-h1, h2, h3 { font-family: broadway, garamond, serif;
-             font-weight: normal;
-             margin-left: 10px; }
+h1, h3 { font-family: "LT Museum", "Copperplate Gothic Bold", garamond, serif;
+         font-weight: normal;
+         margin-left: 10px; }
 
-div#wrapper { width: 728px;
+h2 { font-family: "LT Museum", "Copperplate Gothic Bold", garamond, serif;
+     font-weight: normal;
+     margin-left: 20px;
+     margin-bottom: 0px; }
+
+div#wrapper { width: 738px;
               margin: 10px auto;
-              background-color: #f8fbfe;
-              border: 2px solid #c8dcf5; }
+              background-color: #feffdb;
+              border: 2px solid #e9e32b; }
+
 
 /* index page has a unique layout design */
 
 .index nav { text-align: center;
              line-height: 1.5;
+             font-size: 16px;
              margin: 5px;
              padding: 5px;
-             border-top: 1px solid #c8dcf5;
-             border-bottom: 1px solid #c8dcf5; }
+             border-top: 1px solid #e9e32b;
+             border-bottom: 1px solid #e9e32b; }
 
 /* need to format the section instead of the article bc the nav is inside the article */
-.index section { margin: 10px; }
+.index section { margin: 10px;
+                 padding: 0px 10px; }
 
 .index header { height: 295px;
                 margin: 20px;
-                background: #f8fbfe url(images/s_toa_logo.png) center no-repeat; }
+                background: #feffdb url(images/s_toa_logo.png) center no-repeat; }
 /*image is official game logo, copyright bandai namco */
 
 .index h1 { text-align: center;
             margin-left: 0px; }
 
+.index footer { border-top: 1px solid #e9e32b; }
+
 /* end of index-specific formatting */
+
 
 /* all content pages will have the same general layout */
 
+.content header { height: 90px;
+                  margin: 0;
+                  background: #feffdb url(images/banner.png) center no-repeat; }
+
 .content nav { float: left;
                position: fixed;
-               width: 90px;
+               width: 100px;
                height: 1200px;
                line-height: 1.5;
                margin: 5px;
                padding-left: 10px;
-               border-right: 1px solid #c8dcf5; }
+               border-right: 1px solid #e9e32b; }
 
 .content article { float: right;
                    width: 600px;
                    padding-right: 10px; }
 
+.content section { padding-bottom: 15px;
+                   border-bottom: 1px solid #e9e32b; }
+
 /* end of content page-specific formatting */
 
-/* using left/right sections in chara page to do fun things with image alignment */
-section#left { float: left;
-               width: 300px;
-               height: 300px;
-               margin-bottom: 5px; }
 
-section#right { float: right;
-                width: 300px;
-                height: 300px;
-                margin-bottom: 5px; }
+/* to force some sections (the ones with image floats) to a certain size */
+section#sized { height: 300px; }
+
+/* using left/right spans to do fun things with image alignment */
+span#left { float: left;
+            width: 300px; }
+
+span#right { float: right;
+            width: 300px; }
+
+/* to make links in the navbar the same font as my headers */
+nav a { font-family: "LT Museum", "Copperplate Gothic Bold", garamond, serif; }
+
+a { color: #2a7800;
+    text-decoration: none;
+    padding-bottom: 1px; }
+
+a:visited { color: #878900; }
+
+a:hover, a:focus, a:active { color: #51c513; }
 
 table, th, td { margin-left: 30px;
                 line-height: 1.2;
                 padding: 0px 5px; }
+
+table { padding-top: 5px; }
+/* giving just the entire table object a bit of padding */
 
 footer { clear: both;
          font-size: 80%;
          line-height: 1.3;
          text-align: center;
          margin: 5px;
-         border-top: 1px solid #c8dcf5; }
+         padding-top: 3px;
+         border-top: 1px solid #e9e32b; }
