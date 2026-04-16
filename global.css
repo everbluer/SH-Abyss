@@ -22,6 +22,7 @@ h2 { font-family: "LT Museum", "Copperplate Gothic Bold", garamond, serif;
      font-weight: normal;
      margin-left: 20px;
      margin-bottom: 0px; }
+/* separate entry for h2 so it's indented */
 
 div#wrapper { width: 738px;
               margin: 10px auto;
@@ -51,8 +52,6 @@ div#wrapper { width: 738px;
 .index h1 { text-align: center;
             margin-left: 0px; }
 
-.index footer { border-top: 1px solid #e9e32b; }
-
 /* end of index-specific formatting */
 
 
@@ -62,11 +61,12 @@ div#wrapper { width: 738px;
                   margin: 0;
                   background: #feffdb url(images/banner.png) center no-repeat; }
 
+/* my nav floats on the left side */
 .content nav { float: left;
-               position: sticky;
+               position: sticky; /* makes it scroll to the top of the screen and then stay there */
                top: 10px;
                width: 100px;
-               height: 98vh;
+               height: 98vh; /* makes it not quite the height of the browser window, to keep it visually within the wrapper div and still have a full-height border */
                line-height: 1.5;
                background-color: #feffdb;
                margin: 5px;
@@ -81,6 +81,7 @@ div#wrapper { width: 738px;
 
 /* end of content page-specific formatting */
 
+/* my line break */
 hr { height: 1px;
      color: #e9e32b;
      background-color: #e9e32b;
